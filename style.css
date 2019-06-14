@@ -1,0 +1,432 @@
+
+/*---------------Major Elements used in page structures  -------------------*/
+
+body {
+	margin: 0;
+	padding: 0;
+	/*background-color: lightblue;*/
+
+	background-color: lightblue; /* For browsers that do not support gradients */
+  	background-image: linear-gradient(90deg, turquoise, lightblue); /* Standard syntax (must be last) */
+
+	background-size: cover;
+	background-repeat: no-repeat;
+	font-family: 'Lato', sans-serif;
+	color: black;
+}
+
+#grad {
+	height: 100%/*100px*/;
+  	background-color: lightblue; /* For browsers that do not support gradients */
+  	background-image: linear-gradient(90deg, turquoise, lightblue); /* Standard syntax (must be last) */
+}
+
+#slideshow-container {
+	background-color: none;
+	display: block;
+	position: relative;
+	padding: 4em;
+	margin-right: auto;
+	margin-left: auto;
+	width: 800px;
+}
+
+/*
+#splash {
+	position: relative;
+	padding: 4em;
+	display: block;
+	background-color: black;
+	margin-bottom: auto;
+	background: rgba(0,0,0,0.8);
+}
+
+
+main{
+	margin: 15px;
+}
+
+section{
+	width: auto;
+	padding: 6px 4px 6px 8px;
+	margin: auto;
+}
+
+header{
+	height: 100px;
+	padding: 0;
+	margin: 0;
+	
+}
+*/
+footer{
+	height: 50px;
+	color: black;
+	font-weight: lighter;
+	padding:30px;
+/*	text-align: center;*/
+}
+
+/*----------- Minor Elements used in page structures ------------*/
+
+button {
+	display: inline-block;
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+	/*
+	background-color: none/*#6699ff*//*;
+    border: 2px solid black;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    */
+}
+
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+/*    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);*/
+
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/*
+button:hover{
+	background-color: #3377ff;
+}
+
+button:hover a{
+	color: white;
+}
+*/
+
+/*
+section { 
+	width: 85%; 
+	padding: 4em;
+	display: block;
+	margin-bottom: auto;
+}
+
+.sideleft{
+	padding: 10px 5px 10px 5px;
+	max-width: 30%;
+
+	margin: 0 0 0 0;
+	float: left;
+}
+
+.sideleft img {
+	width: 100%;
+}
+
+.sideleft h2{
+	padding-bottom: 10px;
+}
+
+.sideright{
+	padding: 2px;
+	width: 65%;
+	float: right;
+	color:black;
+}
+
+.sideright ul li {
+	color:black;
+}
+*/
+#center {
+    padding: 10px;
+    text-align: center;
+}
+
+.clear{
+	clear: both;
+}
+
+/*Imitating Dawen Zhang's website. what is webkit?*/
+/*
+.indexdisplay {
+	display: flex;
+	width: 100vw;
+	height: auto;
+	-webkit-box-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	align-items: center;
+}
+
+.indexdisplay .projects {
+	margin-top: 0;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	flex-direction: row;
+}
+
+.projectsholder {
+	position: relative;
+	display: grid;
+	width: 1200px;
+	height: auto;
+	margin-right: 80px;
+	margin-left: 80px;
+	grid-auto-columns: 1fr;
+	grid-column-gap: 48px;
+	grid-row-gap: 80px;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: auto auto auto;	
+}
+*/
+
+/*--------------------- Slideshow Elements ------------------------*/
+.slideshow-container {
+	position: relative;
+	background-color: none/*#f1f1f1*/;
+	border: solid 1px grey;
+}
+
+.slide {
+	display: none;
+	padding: 80px;
+	text-align: center;
+}
+
+.dot-container {
+	text-align: center;
+	padding: 20px;
+	background-color: none/*#ddd*/;
+	border: solid 1px grey;
+}
+
+.dot {
+	cursor: pointer;
+	height: 15px;
+	width: 15px;
+	margin: 0 2px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+	background-color: #717171;
+}
+
+/*--------------------- Text Elements ------------------------*/
+
+h1{
+	letter-spacing: 0.5px;
+	font-size: 30px;
+	margin: 0;
+	padding: 10px 0 20px 10px;
+	color: black;
+	text-align: center;
+}
+
+h2{
+	text-align: center;
+	font-size: 27px;
+	margin: 0;
+	text-transform: uppercase;
+	color: black;
+	padding-bottom: 10px;
+}
+
+h3{
+	font-size: 14px;
+	margin: 0px;
+	padding: 5px;
+	text-transform: uppercase;
+	text-align: left;
+	color: black;
+	letter-spacing: 0.5px;
+}
+
+p{
+	font-family: 'Raleway', sans-serif;	
+	color: black;
+	margin: 10px 0;
+	padding: 0;
+	font-size: 17px;
+}
+
+p a{
+	text-decoration: none;
+	letter-spacing: 0.5px;
+	font-weight: bold;
+}
+
+ul{
+	font-family: 'Roboto', sans-serif;
+	font-size: 17px;
+	/*color: white;*/
+	margin: 10px 0;
+}
+
+.logo-container .navigation-bar a{
+	text-decoration: none;
+	font-size: 30px;
+	padding: 20px;
+	font-family: 'Roboto', sans-serif;
+	text-transform: uppercase;
+	font-weight: 100; /*100 thin, 300 light*/
+}
+
+/*Pretty sure I need this??*/
+/*
+ul li:hover{
+	text-decoration: underline;
+	cursor: pointer;
+	visibility:visible;
+	transform: scaleX(1);
+}*/
+
+
+/*-------------- 2. Preloader css starts ---------------*/
+
+.loader_bg {
+    position: fixed;
+    z-index: 9999999;
+    background: #fff;
+    width: 100%;
+    height: 100%;
+}
+
+.loader {
+    border: 0 solid transparent;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: calc(50vh - 75px);
+    left: calc(50vw - 75px);
+}
+
+.loader:before, .loader:after {
+    content: '';
+    border: 1em solid #31AF91;
+    border-radius: 50%;
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: loader 2s linear infinite;
+    opacity: 0;
+}
+
+.loader:before {
+    animation-delay: .5s;
+}
+
+@keyframes loader {
+    0% {
+        transform: scale(0);
+        opacity: 0; }
+    50% {
+        opacity: 1; }
+    100% {
+        transform: scale(1);
+        opacity: 0; }
+}
+
+
+/*-------------- Preloader css ends ---------------*/
+
+/* ------------------- Navigation Elements --------------------*/
+
+.image-logo {
+	float: left;
+}
+
+.text-logo {
+	float: left;
+	font-family: 'Delius Unicase', cursive;
+	font-weight: 700;
+	font-size: 40px;
+	text-decoration: none;
+}
+
+#navigation-container {
+	width:auto;
+	margin:  0 20px 0 20px;
+	padding: 20px 0 20px 0;
+	height: auto
+}
+
+.navigation-bar {
+	width:auto;
+	margin: 0px;
+	height: 70px;
+	/*background-color: lightblue;*/
+	text-align: center;
+}
+
+.navigation-bar .img{
+	float:left;
+	height: auto;
+}
+
+.navigation-bar .social-icon-container{
+	height: auto;
+/*	border: solid 1px black;*/
+	margin: 0;
+	text-align: center;
+	padding: 5px;
+	float: right;
+	display: inline-block;
+}
+
+a.social-icon-link{
+	margin: inherit;
+	padding: 40px 15px 0 15px;
+	text-decoration: none;
+/*	border: solid 1px blue;*/
+}
+
+svg.social-icon{
+	height: inherit;
+	width: 50px;
+}
+
+svg.social-icon:hover {
+	fill: white;
+}
+
