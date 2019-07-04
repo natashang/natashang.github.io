@@ -14,16 +14,20 @@ html, body {
 }
 
 body{
-	background-color: lightblue; /* For browsers that do not support gradients */
-  	background-image: linear-gradient(90deg, turquoise, lightblue); /* Standard syntax (must be last) */
+	/*background-color: lightblue;*/ /* For browsers that do not support gradients */
+  	/*background-image: linear-gradient(90deg, turquoise, lightblue);*/ /* Standard syntax (must be last) */
 	background-size: cover;
 	background-repeat: no-repeat;
 	font-family: 'Lato', sans-serif;
 	color: black;
 }
-
+.wrapper {
+	margin: auto;
+}
 .content {
-	background:none/*#ffffcc*/;
+	/*background:none*//*#ffffcc*/;
+	background-color: lightblue; /* For browsers that do not support gradients */
+  	background-image: linear-gradient(90deg, turquoise, lightblue);
 	margin:auto;
 	min-height:100%;
 	text-align:left;
@@ -185,6 +189,59 @@ button {
 
 .clear{
 	clear: both;
+}
+
+/*--------------------- Gallery Elements ------------------------*/
+
+#work-container{
+
+}
+
+div.gallery {
+  border: 1px solid black;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 10px;
+  float: left;
+  width: 32.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 /*--------------------- Slideshow Elements ------------------------*/
