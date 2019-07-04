@@ -1,24 +1,78 @@
 
 /*---------------Major Elements used in page structures  -------------------*/
 
-body {
-	margin: 0;
-	padding: 0;
-	/*background-color: lightblue;*/
+/*----------- Homepage Sticky Footer ------------*/
+* {
+	margin:0;
+	padding:0
+}
 
+html, body {
+	height:100%;
+	text-align:center;
+	width: 100%;
+}
+
+body{
 	background-color: lightblue; /* For browsers that do not support gradients */
   	background-image: linear-gradient(90deg, turquoise, lightblue); /* Standard syntax (must be last) */
-
 	background-size: cover;
 	background-repeat: no-repeat;
 	font-family: 'Lato', sans-serif;
 	color: black;
 }
 
-#grad {
-	height: 100%/*100px*/;
-  	background-color: lightblue; /* For browsers that do not support gradients */
-  	background-image: linear-gradient(90deg, turquoise, lightblue); /* Standard syntax (must be last) */
+.content {
+	background:none/*#ffffcc*/;
+	margin:auto;
+	min-height:100%;
+	text-align:left;
+	clear:both;
+}
+
+.content-inside{
+	padding-bottom:40px;
+}
+
+.header {
+	background:none/*red*/;
+	border-top:-40px solid #fff; 
+}
+
+.footer {
+	margin:auto;
+	height:40px;
+	margin-top:-40px;
+	clear:both;
+	color:black;
+	font-weight: lighter
+	padding: 30px;
+}
+
+body:before {
+	content:"";
+	height:100%;
+	float:left;
+	width:0;
+	margin-top:-32767px;
+}
+
+h1, h2, p {
+	padding:0 10px;
+}
+
+.dot-container:after {
+	clear:both;
+	display:block;
+	height:1%;
+	content:" ";
+}
+
+.content:after{
+	clear:both;
+	display:block;
+	height:1%;
+	content:" ";
 }
 
 #slideshow-container {
@@ -31,40 +85,40 @@ body {
 	width: 800px;
 }
 
-/*
-#splash {
-	position: relative;
-	padding: 4em;
-	display: block;
-	background-color: black;
-	margin-bottom: auto;
-	background: rgba(0,0,0,0.8);
+.tooltip{
+	position:relative;
+	display:inline-block;
+	border-bottom: 1px dotted black;
 }
 
-
-main{
-	margin: 15px;
-}
-
-section{
+.tooltip .tooltiptext{
+	visibility: hidden;
 	width: auto;
-	padding: 6px 4px 6px 8px;
-	margin: auto;
+	background-color: black;
+	color: #fff;
+	text-align:center;
+	border-radius: 6px;
+	padding: 10px ;
+	position: absolute;
+	z-index: 1;
+	bottom: 150%;
+	left: 50%;
+	margin-left: -60px;
 }
 
-header{
-	height: 100px;
-	padding: 0;
-	margin: 0;
-	
+.tooltip .tooltiptext::after{
+	content:"";
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: black transparent transparent transparent;
 }
-*/
-footer{
-	height: 50px;
-	color: black;
-	font-weight: lighter;
-	padding:30px;
-/*	text-align: center;*/
+
+.tooltip:hover .tooltiptext{
+	visibility: visible;
 }
 
 /*----------- Minor Elements used in page structures ------------*/
@@ -117,7 +171,6 @@ button {
 .button:hover span {
   padding-right: 25px;
 /*    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);*/
-
 }
 
 .button:hover span:after {
@@ -125,51 +178,6 @@ button {
   right: 0;
 }
 
-/*
-button:hover{
-	background-color: #3377ff;
-}
-
-button:hover a{
-	color: white;
-}
-*/
-
-/*
-section { 
-	width: 85%; 
-	padding: 4em;
-	display: block;
-	margin-bottom: auto;
-}
-
-.sideleft{
-	padding: 10px 5px 10px 5px;
-	max-width: 30%;
-
-	margin: 0 0 0 0;
-	float: left;
-}
-
-.sideleft img {
-	width: 100%;
-}
-
-.sideleft h2{
-	padding-bottom: 10px;
-}
-
-.sideright{
-	padding: 2px;
-	width: 65%;
-	float: right;
-	color:black;
-}
-
-.sideright ul li {
-	color:black;
-}
-*/
 #center {
     padding: 10px;
     text-align: center;
@@ -179,59 +187,40 @@ section {
 	clear: both;
 }
 
-/*Imitating Dawen Zhang's website. what is webkit?*/
-/*
-.indexdisplay {
-	display: flex;
-	width: 100vw;
-	height: auto;
-	-webkit-box-pack: center;
-	justify-content: center;
-	-webkit-box-align: center;
-	align-items: center;
-}
-
-.indexdisplay .projects {
-	margin-top: 0;
-	-webkit-box-orient: horizontal;
-	-webkit-box-direction: normal;
-	-webkit-flex-direction: row;
-	flex-direction: row;
-}
-
-.projectsholder {
-	position: relative;
-	display: grid;
-	width: 1200px;
-	height: auto;
-	margin-right: 80px;
-	margin-left: 80px;
-	grid-auto-columns: 1fr;
-	grid-column-gap: 48px;
-	grid-row-gap: 80px;
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-rows: auto auto auto;	
-}
-*/
-
 /*--------------------- Slideshow Elements ------------------------*/
 .slideshow-container {
 	position: relative;
 	background-color: none/*#f1f1f1*/;
-	border: solid 1px grey;
+	/*border: solid 1px grey;*/
 }
-
+.homepage-content{
+	background-color: yellow;
+}
 .slide {
 	display: none;
 	padding: 80px;
 	text-align: center;
+	/*background-color: pink;*/
+}
+
+.slide-content{
+	/*background-color: red;*/
+/*	padding:25px;*/
+}
+
+.slide-title{
+/*	background-color: green;*/
+}
+.slide-paragraph{
+	/*background-color: blue;*/
+
 }
 
 .dot-container {
 	text-align: center;
 	padding: 20px;
 	background-color: none/*#ddd*/;
-	border: solid 1px grey;
+	/*border: solid 1px grey;*/
 }
 
 .dot {
@@ -426,6 +415,16 @@ svg.social-icon{
 	width: 50px;
 }
 
+object.social-icon{
+	height: inherit;
+	width: 50px;
+}
+
+object.social-icon:hover{
+	object.data {
+		fill: white;
+	}
+}
 svg.social-icon:hover {
 	fill: white;
 }
