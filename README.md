@@ -1,2 +1,4 @@
 # natashang.github.io
-portfolio site
+A directory containing displays and links of web projects I have made
+
+[View Site Here](https://natashang.github.io/)
