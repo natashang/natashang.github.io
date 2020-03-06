@@ -11,43 +11,104 @@
 
 	<!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
 	<link href="https://fonts.googleapis.com/css?family=Delius+Unicase" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
 	<style>
-
+		#top-heading{
+			margin: 0 auto;
+		}
 	</style>
 
 </head>
 
 <body>
-	<h1>Welcome to My Page</h1>
-	<p>
-		Click on the links below to view some web projects I have made!
-		This list is not yet complete and I will apply some graphical style!
-	</p>
+	<div class="text-center" >
+		<table id="top-heading" >
+			<tr>
+				<td>
+					<h1>Hi! I like making websites :)</h1>
+					<h5>
+						<a href="https://www.linkedin.com/in/natasha--ng/">LinkedIn</a> 
+						| 
+						<a href="https://github.com/natashang">Github</a>
+					</h5>
+					<p>
+						This is a (somewhat incomplete) list of web projects I have made. <br>
+						Thanks for checking it out! 
+					</p>
+				</td>
+				<td><img src="myAvatar.png" alt="an avatar" border-radius=50%/>
+				</td>
+			</tr>
+		</table>		
+	</div>
 
-	<ul>
-		<li>
-			<a href="https://natashang.github.io/daily-ui-app/">daily UI 100 day challenge</a> | 
-			<a href="https://github.com/natashang/daily-ui-app">Github</a>
-		</li>
-		<li>
-			<a href="https://natashang.github.io/react-todo-app/">react-todo-app</a> | 
-			<a href="https://github.com/natashang/react-todo-app">Github</a>
-		</li>
-		<li>
-			<a href="https://natashang.github.io/react-app-with-animations/">react-app-with-animations</a> | 
-			<a href="https://github.com/natashang/react-app-with-animations">Github</a>
-		</li>
-		<li>
-			<a href="https://csci202.us/Fall17/natashang/">portfolioWebsite</a> | 
-			<a href="https://github.com/natashang/portfolioWebsite">Github</a>
-		</li>
-		<li>
-			<a href="#">dynamicWebPages</a> | 
-			<a href="https://github.com/natashang/dynamicWebPages">Github</a>
-		</li>		
-	</ul>
+	<table class="table table-hover">
+		<thead>
+		  <tr>
+			<th scope="col">Project Name</th>
+			<th scope="col">Description</th>
+			<th scope="col">Live Site URL</th>
+			<th scope="col">Github repo</th>
+		  </tr>
+		</thead>
+		<tbody>
+		  <tr><td>react-redux-cannon-game</td>
+			<td>Alien game implemented with React, Redux, and SVG</td>
+			<td><a href="https://natashang.github.io/react-redux-cannon-game/">Click Me</a></td>
+			<td><a href="https://github.com/natashang/react-redux-cannon-game">Github</a></td>
+		  </tr>
+		  <tr><td>basic-react-pagination-app</td>
+			<td>React app using axios to pull data from reqres and display users</td>
+			<td>Not live yet</td>
+			<td><a href="https://github.com/natashang/basic-react-pagination-app">Github</a></td>
+		  </tr>
+		  
+		  <tr><td>basic-react-to-do-app</td>
+			<td>To do list implementation with React's functional and class components</td>
+			<td><a href="https://natashang.github.io/basic-react-to-do-app/">Click Me</a></td>
+			<td><a href="https://github.com/natashang/basic-react-to-do-app">Github</a></td>
+		  </tr> 
+		  <tr><td>dailyUI 100 day challenge</td>
+			<td>WIP: setting up to display different views with React and react-router</td>
+			<td><a href="https://natashang.github.io/daily-ui-app/">Click Me</a></td>
+			<td><a href="https://github.com/natashang/react-redux-cannon-game">Github</a></td>
+		  </tr>
+		  <tr><td>WordPress Church Website</td>
+			<td>Volunteer project for St. Peter's United Methodist Church using WordPress, Astra, and Elementor</td>
+			<td><a href="https://stpetersumc.net/">Click Me</a></td>
+			<td>No Github</td>
+		  </tr>
+		  <tr><td>react-app-with-animations</td>
+			<td>Fun little portfolio homepage opener. Made with React</td>
+			<td><a href="https://natashang.github.io/react-app-with-animations/">Click Me</a></td>
+			<td><a href="https://github.com/natashang/react-app-with-animations">Github</a></td>
+		  </tr>
+		  <tr><td>Interactive Data Visualization App</td>
+			<td>Senior capstone project for USGS Tidal in React. Note: I left this project after graduating college</td>
+			<td><a href="http://usgstidal.calebouellette.com/">Click Me</a></td>
+			<td><a href="https://github.com/sccrosby/usgstidal">Github</a></td>
+		  </tr>
+		  <tr><td>portfolioWebsite</td>
+			<td>Website project built from scratch for school. HTML5, CSS3, PHP, jQuery</td>
+			<td><a href="https://csci202.us/Fall17/natashang/">Click Me</a></td>
+			<td><a href="https://github.com/natashang/portfolioWebsite">Github</a></td>
+		  </tr>
+		  <tr><td>dynamicWebPages</td>
+			<td>Websites from scratch for school assignments. HTML5, CSS3</td>
+			<td>No live site</td>
+			<td><a href="https://github.com/natashang/dynamicWebPages">Github</a></td>
+		  </tr>
+		  <tr><td>Portfolio Website</td>
+			<td>Made with Weebly.com. Note: I do not update this page anymore</td>
+			<td><a href="https://natashang.weebly.com/">Click Me</a></td>
+			<td>No Github</td>
+		  </tr>
+		</tbody>
+	  </table>
 
+	  
+	  
 
 </body>
 
