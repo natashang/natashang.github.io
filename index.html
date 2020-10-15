@@ -1,121 +1,158 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 
-<head>
+    <title>Natasha Ng | Front End Developer</title>
 
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <link rel="stylesheet" type="text/css" href="portfolio.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Delius+Unicase" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
 
-	<title>Natasha Ng | Home</title>
+    <!-- defer keyword? -->
+    <script
+      src="https://kit.fontawesome.com/493abebbc5.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-	<!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
-	<link href="https://fonts.googleapis.com/css?family=Delius+Unicase" rel="stylesheet">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <body>
+    <!-- Navigation-->
+    <nav>
+      <a>Home</a>
+      <a>About</a>
+      <a>Portfolio</a>
+    </nav>
 
-	<style>
-		#top-heading{
-			margin: 0 auto;
-		}
-	</style>
+    <!-- Landing Page: brief overview -->
+    <div class="center">
+      <div id="splash">
+        <h1>Natasha Ng</h1>
+        <h3>Front End Developer | React, JavaScript</h3>
+        <div class="links">
+          <a
+            href="#"
+            target="_blank"
+            aria-label="GitHub"
+            aria-hidden="true"
+            rel="noopener"
+            ><i class="fab fa-github"></i>
+          </a>
+          <a
+            href="#"
+            target="_blank"
+            aria-label="LinkedIn"
+            aria-hidden="true"
+            rel="noopener"
+            ><i class="fab fa-linkedin-in"></i>
+          </a>
+          <a
+            href="#"
+            target="_blank"
+            aria-label="Dev.to"
+            aria-hidden="true"
+            rel="noopener"
+            ><i class="fab fa-dev"></i>
+          </a>
+          <a
+            href="#"
+            target="_blank"
+            aria-label="Twitter"
+            aria-hidden="true"
+            rel="noopener"
+            ><i class="fab fa-twitter"></i>
+          </a>
+          <a
+            href="#"
+            target="_blank"
+            aria-label="Email"
+            aria-hidden="true"
+            rel="noopener"
+            ><i class="fas fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+    </div>
 
-</head>
+    <!-- About: quick description area -->
+    <section>
+      <h1>About</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+        blanditiis numquam suscipit expedita a iusto magni similique voluptate
+        nihil natus omnis neque, possimus sit ipsa non, mollitia delectus quas
+        aliquid sapiente quaerat perspiciatis quae. Placeat inventore porro modi
+        accusamus, illo pariatur deserunt doloribus voluptatibus tempore
+        corrupti quae? Vero, suscipit fuga.
+      </p>
+    </section>
 
-<body>
-	<div class="text-center" >
-		<table id="top-heading" >
-			<tr>
-				<td>
-					<h1>Hi! I like making websites :)</h1>
-					<h5>
-						<a href="https://www.linkedin.com/in/natasha--ng/">LinkedIn</a> 
-						| 
-						<a href="https://github.com/natashang">Github</a>
-					</h5>
-					<p>
-						This is a (somewhat incomplete) list of web projects I have made. <br>
-						Thanks for checking it out! 
-					</p>
-				</td>
-				<td><img src="myAvatar.png" alt="an avatar" border-radius=50%/>
-				</td>
-			</tr>
-		</table>		
-	</div>
+    <!-- Portfolio: cards with screenshots and link to external web app host-->
+    <section>
+      <h1>Portfolio</h1>
+      <div class="grid">
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+      </div>
+    </section>
 
-	<table class="table table-hover">
-		<thead>
-		  <tr>
-			<th scope="col">Project Name</th>
-			<th scope="col">Description</th>
-			<th scope="col">Live Site URL</th>
-			<th scope="col">Github repo</th>
-		  </tr>
-		</thead>
-		<tbody>
-			<tr><td>react-redux-pizza-store-app</td>
-				<td>Build your own pizza! An app built using React and Redux</td>
-				<td><a href="https://natashang.github.io/react-redux-pizza-store-app/">Click Me</a></td>
-				<td><a href="https://github.com/natashang/react-redux-pizza-store-app">Github</a></td>
-			</tr>
-
-		  <tr><td>react-redux-cannon-game</td>
-			<td>[WIP] Alien game implemented with React, Redux, and SVG</td>
-			<td><a href="https://natashang.github.io/react-redux-cannon-game/">Click Me</a></td>
-			<td><a href="https://github.com/natashang/react-redux-cannon-game">Github</a></td>
-		  </tr>
-		  <!-- <tr><td>basic-react-pagination-app</td>
-			<td>React app using axios to pull data from reqres and display users</td>
-			<td>Not live yet</td>
-			<td><a href="https://github.com/natashang/basic-react-pagination-app">Github</a></td>
-		  </tr> -->
-		  
-		  <tr><td>basic-react-to-do-app</td>
-			<td>To do list implementation with React's functional and class components</td>
-			<td><a href="https://natashang.github.io/basic-react-to-do-app/">Click Me</a></td>
-			<td><a href="https://github.com/natashang/basic-react-to-do-app">Github</a></td>
-		  </tr> 
-		  <tr><td>dailyUI 100 day challenge</td>
-			<td>[WIP] Setting up to display different views with React and react-router</td>
-			<td><a href="https://natashang.github.io/daily-ui-app/">Click Me</a></td>
-			<td><a href="https://github.com/natashang/react-redux-cannon-game">Github</a></td>
-		  </tr>
-		  <tr><td>WordPress Church Website</td>
-			<td>Volunteer project for St. Peter's United Methodist Church using WordPress, Astra, and Elementor</td>
-			<td><a href="https://stpetersumc.net/">Click Me</a></td>
-			<td>No Github</td>
-		  </tr>
-		  <tr><td>react-app-with-animations</td>
-			<td>Fun little portfolio homepage opener. Made with React</td>
-			<td><a href="https://natashang.github.io/react-app-with-animations/">Click Me</a></td>
-			<td><a href="https://github.com/natashang/react-app-with-animations">Github</a></td>
-		  </tr>
-		  <tr><td>Interactive Data Visualization App</td>
-			<td>Senior capstone project for USGS Tidal in React. Note: I left this project after graduating college</td>
-			<td><a href="http://usgstidal.calebouellette.com/">Click Me</a></td>
-			<td><a href="https://github.com/sccrosby/usgstidal">Github</a></td>
-		  </tr>
-		  <tr><td>portfolioWebsite</td>
-			<td>Website project built from scratch for school. HTML5, CSS3, PHP, jQuery</td>
-			<td><a href="https://csci202.us/Fall17/natashang/">Click Me</a></td>
-			<td><a href="https://github.com/natashang/portfolioWebsite">Github</a></td>
-		  </tr>
-		  <tr><td>dynamicWebPages</td>
-			<td>Websites from scratch for school assignments. HTML5, CSS3</td>
-			<td>No live site</td>
-			<td><a href="https://github.com/natashang/dynamicWebPages">Github</a></td>
-		  </tr>
-		  <tr><td>Portfolio Website</td>
-			<td>Made with Weebly.com. Note: I do not update this page anymore</td>
-			<td><a href="https://natashang.weebly.com/">Click Me</a></td>
-			<td>No Github</td>
-		  </tr>
-		</tbody>
-	  </table>
-
-	  
-	  
-
-</body>
-
+    <!-- Contact : social links -->
+    <section>
+      <br />
+      <div class="center">
+        <div class="links">
+          <a
+            href="#"
+            target="_blank"
+            aria-label="GitHub"
+            aria-hidden="true"
+            rel="noopener"
+            ><i class="fab fa-github"></i>
+          </a>
+          <a
+            href="#"
+            target="_blank"
+            aria-label="LinkedIn"
+            aria-hidden="true"
+            rel="noopener"
+            ><i class="fab fa-linkedin-in"></i>
+          </a>
+          <a
+            href="#"
+            target="_blank"
+            aria-label="Dev.to"
+            aria-hidden="true"
+            rel="noopener"
+            ><i class="fab fa-dev"></i>
+          </a>
+          <a
+            href="#"
+            target="_blank"
+            aria-label="Twitter"
+            aria-hidden="true"
+            rel="noopener"
+            ><i class="fab fa-twitter"></i>
+          </a>
+          <a
+            href="#"
+            target="_blank"
+            aria-label="Email"
+            aria-hidden="true"
+            rel="noopener"
+            ><i class="fas fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>

@@ -1,0 +1,41 @@
+html,
+body {
+  margin: 0;
+  padding: 10px;
+}
+
+/* TODO: responsiveness -> make into hamburger icon */
+nav {
+  border: 1px solid green;
+  font-size: 24px;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid red;
+}
+
+.center-text {
+  text-align: center;
+}
+
+#splash {
+  position: relative;
+  border: 1px solid slateblue;
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* grid-template-rows: repeat(2, 1fr); */
+  gap: 20px 10px;
+}
+
+.grid-item {
+  background-color: lightskyblue;
+}
+
+/********* responsiveness *********/
