@@ -1,13 +1,96 @@
 html,
 body {
   margin: 0;
-  padding: 10px;
+  padding: 0;
+  height: 100%;
+  font-family: "Raleway", sans-serif;
 }
 
 /* TODO: responsiveness -> make into hamburger icon */
 nav {
   border: 1px solid green;
   font-size: 24px;
+}
+
+.hero {
+  height: 100%;
+  text-align: center;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.hero-text {
+  width: 75%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-shadow: 1px px 2px #0a0a0a;
+}
+
+.hero button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: black;
+  background-color: #ddd;
+  text-align: center;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.hero button:hover {
+  background-color: #555;
+  color: white;
+}
+
+section {
+  width: 100%;
+  min-height: 100vh;
+  max-height: auto;
+  float: left;
+}
+
+#Home,
+#About,
+#Portfolio,
+#Contact {
+  display: block;
+  overflow: auto;
+}
+
+#About,
+#Portfolio,
+#Contact {
+  min-height: auto;
+  max-height: auto;
+  padding: 40px 0;
+}
+
+/* Home Page */
+#Home {
+  background-color: lightcyan;
+  position: relative;
+}
+
+#About {
+  background-color: lightpink;
+}
+
+#Portfolio {
+  background-color: lightslategray;
+}
+
+#Contact {
+  background: whitesmoke;
 }
 
 .center {

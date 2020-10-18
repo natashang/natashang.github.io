@@ -14,6 +14,11 @@
     <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
     <!-- <link href="https://fonts.googleapis.com/css?family=Delius+Unicase" rel="stylesheet">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway:200,100,400"
+      rel="stylesheet"
+      type="text/css"
+    />
 
     <!-- defer keyword? -->
     <script
@@ -25,63 +30,74 @@
   <body>
     <!-- Navigation-->
     <nav>
-      <a>Home</a>
-      <a>About</a>
-      <a>Portfolio</a>
+      <a href="#Home">Home</a>
+      <a href="#About">About</a>
+      <a href="#Portfolio">Portfolio</a>
+      <a href="#Contact">Contact</a>
     </nav>
 
     <!-- Landing Page: brief overview -->
-    <div class="center">
-      <div id="splash">
-        <h1>Natasha Ng</h1>
-        <h3>Front End Developer | React, JavaScript</h3>
-        <div class="links">
-          <a
-            href="#"
-            target="_blank"
-            aria-label="GitHub"
-            aria-hidden="true"
-            rel="noopener"
-            ><i class="fab fa-github"></i>
-          </a>
-          <a
-            href="#"
-            target="_blank"
-            aria-label="LinkedIn"
-            aria-hidden="true"
-            rel="noopener"
-            ><i class="fab fa-linkedin-in"></i>
-          </a>
-          <a
-            href="#"
-            target="_blank"
-            aria-label="Dev.to"
-            aria-hidden="true"
-            rel="noopener"
-            ><i class="fab fa-dev"></i>
-          </a>
-          <a
-            href="#"
-            target="_blank"
-            aria-label="Twitter"
-            aria-hidden="true"
-            rel="noopener"
-            ><i class="fab fa-twitter"></i>
-          </a>
-          <a
-            href="#"
-            target="_blank"
-            aria-label="Email"
-            aria-hidden="true"
-            rel="noopener"
-            ><i class="fas fa-envelope"></i>
-          </a>
+    <section id="Home">
+      <div class="hero">
+        <!-- <div class="center"> -->
+        <!-- <div id="splash"> -->
+        <div class="hero-text">
+          <h1>Natasha Ng</h1>
+          <h3>Front End Developer | React, JavaScript</h3>
+
+          <button>Resume</button>
+
+          <div class="links">
+            <a
+              href="#"
+              target="_blank"
+              aria-label="GitHub"
+              aria-hidden="true"
+              rel="noopener"
+              ><i class="fab fa-github"></i>
+            </a>
+            <a
+              href="#"
+              target="_blank"
+              aria-label="LinkedIn"
+              aria-hidden="true"
+              rel="noopener"
+              ><i class="fab fa-linkedin-in"></i>
+            </a>
+            <a
+              href="#"
+              target="_blank"
+              aria-label="Dev.to"
+              aria-hidden="true"
+              rel="noopener"
+              ><i class="fab fa-dev"></i>
+            </a>
+            <a
+              href="#"
+              target="_blank"
+              aria-label="Twitter"
+              aria-hidden="true"
+              rel="noopener"
+              ><i class="fab fa-twitter"></i>
+            </a>
+            <a
+              href="#"
+              target="_blank"
+              aria-label="Email"
+              aria-hidden="true"
+              rel="noopener"
+              ><i class="fas fa-envelope"></i>
+            </a>
+          </div>
         </div>
+
+        <!-- </div> -->
+        <!-- </div> -->
       </div>
-    </div>
+    </section>
 
     <!-- About: quick description area -->
-    <section>
+    <section id="About">
       <h1>About</h1>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
@@ -94,7 +110,7 @@
     </section>
 
     <!-- Portfolio: cards with screenshots and link to external web app host-->
-    <section>
+    <section id="Portfolio">
       <h1>Portfolio</h1>
       <div class="grid">
         <div class="grid-item">1</div>
@@ -107,7 +123,7 @@
     </section>
 
     <!-- Contact : social links -->
-    <section>
+    <section id="Contact">
       <br />
       <div class="center">
         <div class="links">
